@@ -51,6 +51,12 @@ gem "bootsnap", require: false
 # db - postgres
 gem 'pg', '~> 1.4', '>= 1.4.3'
 
+# SitemapGenerator is a framework-agnostic XML Sitemap generator written in Ruby
+# with automatic Rails integration. It supports Video, News, Image, Mobile,
+# PageMap and Alternate Links sitemap extensions and includes Rake tasks for
+# managing your sitemaps, as well as many other great features.
+gem 'sitemap_generator', '~> 6.3'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -64,6 +70,18 @@ group :development do
   # code inspection, a live REPL and local/instance variable inspection for all
   # stack frames.
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
+
+  # Add a comment summarizing the current schema to the top or bottom of each of
+  #   - ActiveRecord models
+  #   - Fixture files
+  #   - Tests and Specs
+  #   - Object Daddy exemplars
+  #   - Machinist blueprints
+  #   - Fabrication fabricators
+  #   - Thoughtbot's factory_bot factories, i.e. the
+  #     (spec|test)/factories/<model>_factory.rb files routes.rb file (for Rails
+  #     projects).
+  gem 'annotate'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
