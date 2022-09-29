@@ -57,6 +57,18 @@ gem 'pg', '~> 1.4', '>= 1.4.3'
 # managing your sitemaps, as well as many other great features.
 gem 'sitemap_generator', '~> 6.3'
 
+# Haml (HTML Abstraction Markup Language) is a layer on top of HTML or XML
+# that's designed to express the structure of documents in a non-repetitive,
+# elegant, and easy way by using indentation rather than closing tags and
+# allowing Ruby to be embedded with ease.
+gem 'haml'
+
+# Haml-rails provides Haml generators for Rails 5. It also enables Haml as the
+# templating engine for you, so you don't have to screw around in your own
+# application.rb when your Gemfile already clearly indicated what templating
+# engine you have installed.
+gem 'haml-rails'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
